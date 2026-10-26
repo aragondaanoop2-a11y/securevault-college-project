@@ -1,0 +1,21 @@
+# Dashboard build and local data
+**/node_modules/
+**/dist/
+**/.auth-data/
+/dashboard/.env
+/dashboard/.env.*
+!/dashboard/.env.example
+/dashboard/tools/cloudflared.exe
+
+# Firmware credentials and generated build output
+**/secrets.h
+*.secrets.h
+/firmware/.pio/
+/firmware/build/
+
+# Local editor, operating system, and log files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log

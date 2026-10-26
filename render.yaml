@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: securevault-college-demo
+    runtime: node
+    plan: 0.5c-512mb
+    region: singapore
+    rootDir: dashboard
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /auth/session
+    autoDeployTrigger: commit
+    disk:
+      name: securevault-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: SECUREVAULT_DATA_DIR
+        value: /var/data

@@ -1,0 +1,21 @@
+{
+  "name": "SecureVault | TEAM FIGHT CLUB",
+  "short_name": "SecureVault",
+  "description": "SecureVault locker management and live monitoring dashboard by TEAM FIGHT CLUB",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0608",
+  "theme_color": "#ec4899",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
