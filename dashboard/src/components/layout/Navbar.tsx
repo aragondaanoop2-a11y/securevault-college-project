@@ -97,6 +97,12 @@ export const Navbar: React.FC<NavbarProps> = ({ searchQuery, onSearchChange, onO
         </span>
       </div>
 
+      {/* Shared team identity for both authenticated roles */}
+      <div className="hidden md:flex flex-col min-w-max mr-2 leading-tight" aria-label={TEAM_NAME}>
+        <span className="text-[9px] font-bold tracking-[.18em] uppercase accent-text-gradient">{TEAM_NAME}</span>
+        <span className="text-[9px] text-neutral-500">{APP_NAME} control center</span>
+      </div>
+
       {/* Desktop Search Bar */}
       <div className="hidden md:flex items-center relative w-72 lg:w-96">
         <Search className="w-4 h-4 text-neutral-400 absolute left-3.5 pointer-events-none" />
