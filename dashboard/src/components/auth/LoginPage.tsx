@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { ArrowLeft, ArrowRight, Eye, EyeOff, KeyRound, LockKeyhole, Mail, ShieldCheck, UserRound } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
+import { TEAM_NAME } from '../../config/brand';
 
 export const AuthBackdrop: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <main className="sv-auth-scene">
@@ -153,7 +154,7 @@ export const LoginPage: React.FC = () => {
           </form>
         )}
       </section>
-      <p className="sv-auth-caption">HARDWARE-ENFORCED SECURITY <span>·</span> {new Date().getFullYear()}</p>
+      <p className="sv-auth-caption"><span>{TEAM_NAME}</span> <span>·</span> HARDWARE-ENFORCED SECURITY <span>·</span> {new Date().getFullYear()}</p>
     </AuthBackdrop>
   );
 };
